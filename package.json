@@ -1,0 +1,32 @@
+{
+  "name": "cyclomatic-complexity",
+  "version": "1.0.0",
+  "description": "A demo to showcase the cyclomatic complexity of a program",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "complexity": "./node_modules/.bin/cr --output result src/app.js",
+    "test": "jest --coverage && npm run complexity"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/a-rmz/cyclomatic-complexity.git"
+  },
+  "keywords": [
+    "node",
+    "complexity"
+  ],
+  "author": "Alex Ramirez <armzprz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/a-rmz/cyclomatic-complexity/issues"
+  },
+  "homepage": "https://github.com/a-rmz/cyclomatic-complexity#readme",
+  "devDependencies": {
+    "jest": "^23.1.0",
+    "complexity-report": "^2.0.0-alpha"
+  },
+  "jest": {
+    "coverageReporters": [ "html", "text" ]
+  }
+}
